@@ -78,6 +78,7 @@ WORKDIR /app/
 ENV DOCKER_HOST unix:///tmp/docker.sock
 
 EXPOSE 80
+EXPOSE 81
 
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
 CMD ["forego", "start", "-r"]
